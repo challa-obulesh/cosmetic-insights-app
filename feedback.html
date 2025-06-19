@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="text-center">Feedback Form</h2>
+<form method="post" action="/feedback" class="mx-auto" style="max-width: 500px;">
+  <div class="mb-3">
+    <label>Your Name</label>
+    <input type="text" name="name" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Email address</label>
+    <input type="email" name="email" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label>Your Feedback</label>
+    <textarea name="feedback" class="form-control" rows="4" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-success w-100">Submit Feedback</button>
+</form>
+{% endblock %}
