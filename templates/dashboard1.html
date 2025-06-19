@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Dashboard 1</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
   <h2>Dashboard 1</h2>
-  <iframe 
-    src="https://public.tableau.com/views/cosmeticstory1/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
-    width="100%" height="800px" frameborder="0" allowfullscreen>
-  </iframe>
+  <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+    <iframe 
+      src="https://public.tableau.com/views/cosmeticstory1/Dashboard1?:embed=yes&:display_count=yes&:showVizHome=no"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+      allowfullscreen>
+    </iframe>
+  </div>
   <br>
   <a href="/">← Back to Home</a>
 </body>
