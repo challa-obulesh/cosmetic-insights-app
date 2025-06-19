@@ -25,6 +25,5 @@ def dashboard2():
 def dashboard3():
     return render_template('dashboard3.html')
 
- if __name__ == '__main__':
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
-
