@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
@@ -6,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('home.html')
-
+    
 @app.route('/dashboard1')
 def dashboard1():
     return render_template('dashboard1.html')
@@ -18,6 +17,7 @@ def dashboard2():
 @app.route('/dashboard3')
 def dashboard3():
     return render_template('dashboard3.html')
+
 
 @app.route('/feedback', methods=['GET', 'POST'])
 def feedback():
